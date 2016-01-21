@@ -55,9 +55,13 @@ hari::file { '/.hari.file2':
 create additional files using concat:
 
 ```puppet
-hari::concatfile { '/.hari.file3': }
+hari::concatfile { 'hari3':
+  file => '/.hari.file3',
+}
 
-hari::concatfile { '/.hari.file4': }
+hari::concatfile { 'hari4':
+  file => '/.hari.file4',
+}
 
 hari::concatfile_fragment { 'base hari3':
   file => '/.hari.file3'
@@ -70,13 +74,14 @@ hari::concatfile_fragment { 'base hari4':
 hari::concatfile_fragment { 'extra hari 3':
   file => '/.hari.file3',
   content => 'someone else was HERE',
+  fragment_name => 'extra',
 }
 
 hari::concatfile_fragment { 'extra hari 4':
   file => '/.hari.file4',
   content => 'someone else that wasnt HERE',
+  fragment_name => 'extra',
 }
-
 ```
 
 ## Usage
