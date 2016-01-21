@@ -1,5 +1,8 @@
 # hari
 
+**jordiprats/eyp-hari**: [![Build Status](https://travis-ci.org/jordiprats/eyp-hari.png?branch=master)](https://travis-ci.org/jordiprats/eyp-hari)
+
+
 #### Table of Contents
 
 1. [Overview](#overview)
