@@ -59,17 +59,24 @@ hari::concatfile { '/.hari.file3': }
 
 hari::concatfile { '/.hari.file4': }
 
-hari::concatfile_fragment { '/.hari.file3': }
+hari::concatfile_fragment { 'base hari3':
+  file => '/.hari.file3'
+}
 
-hari::concatfile_fragment { '/.hari.file4': }
+hari::concatfile_fragment { 'base hari4':
+  file => '/.hari.file4',
+}
 
-hari::concat_fragment { '/.hari.file3':
+hari::concatfile_fragment { 'extra hari 3':
+  file => '/.hari.file3',
   content => 'someone else was HERE',
 }
 
-hari::concat_fragment { '/.hari.file4':
+hari::concatfile_fragment { 'extra hari 4':
+  file => '/.hari.file4',
   content => 'someone else that wasnt HERE',
 }
+
 ```
 
 ## Usage
