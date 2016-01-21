@@ -65,9 +65,13 @@ describe 'hari class' do
 
       hari::file { '/.hari.file2': }
 
-      hari::concatfile { '/.hari.file3': }
+      hari::concatfile { 'hari3':
+        file => '/.hari.file3',
+      }
 
-      hari::concatfile { '/.hari.file4': }
+      hari::concatfile { 'hari4':
+        file => '/.hari.file4',
+      }
 
       hari::concatfile_fragment { 'base hari3':
         file => '/.hari.file3'
