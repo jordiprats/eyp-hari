@@ -84,11 +84,13 @@ describe 'hari class' do
       hari::concatfile_fragment { 'extra hari 3':
         file => '/.hari.file3',
         content => 'someone else was HERE',
+        fragment_name => 'extra',
       }
 
       hari::concatfile_fragment { 'extra hari 4':
         file => '/.hari.file4',
         content => 'someone else that wasnt HERE',
+        fragment_name => 'extra',
       }
 
       EOF
