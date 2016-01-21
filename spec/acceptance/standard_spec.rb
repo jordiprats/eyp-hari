@@ -73,11 +73,11 @@ describe 'hari class' do
 
       hari::concatfile_fragment { '/.hari.file4': }
 
-      hari::concat_fragment { '/.hari.file3':
+      hari::concatfile_fragment { '/.hari.file3':
         content => 'someone else was HERE',
       }
 
-      hari::concat_fragment { '/.hari.file4':
+      hari::concatfile_fragment { '/.hari.file4':
         content => 'someone else that wasnt HERE',
       }
 
