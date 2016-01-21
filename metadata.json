@@ -8,6 +8,7 @@
   "project_page": "http://systemadmin.es",
   "issues_url": null,
   "dependencies": [
-    {"version_requirement":">= 1.0.0","name":"puppetlabs/stdlib"}
+    {"version_requirement":">= 1.0.0","name":"puppetlabs/stdlib"},
+    {"version_requirement":">= 1.2.3","name":"puppetlabs/concat"}
   ]
 }

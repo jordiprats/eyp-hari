@@ -1,9 +1,8 @@
-define hari::file ($file=$name, $content="HARi was HERE\n", $mode='0400') {
-        file { $file:
+define hari::concatfile ($file=$name, $mode='0400') {
+        concat { $file:
                 ensure  => present,
                 owner   => 'root',
                 group   => 'root',
                 mode    => $mode,
-                content => $content,
         }
 }
