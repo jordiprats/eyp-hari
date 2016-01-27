@@ -1,10 +1,10 @@
 {
   "name": "eyp-hari",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "eyp",
   "summary": "HARi was HERE",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/jordiprats/eyp-hari",
   "project_page": "http://systemadmin.es",
   "issues_url": null,
   "dependencies": [
