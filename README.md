@@ -115,11 +115,14 @@ hari::concatfile_fragment { 'extra hari 4':
 
 #### hari::file
 
-* **file**: file path (default: /.hari)
+* **file**: file path (default: resource's name)
 * **content**: file content (default: HARi was HERE)
 * **mode**: file mode (default: 0400)
 
 #### hari::concatfile
+
+* **file**: file path (default: resource's name)
+* **mode**: file mode (default: 0400)
 
 #### hari::concatfile_fragment
 
