@@ -1,4 +1,8 @@
-define hari::file ($file=$name, $content="HARi was HERE\n", $mode='0400') {
+define hari::file (
+                    $file    = $name,
+                    $content = "HARi was HERE\n",
+                    $mode    = '0400',
+                  ) {
   file { $file:
     ensure  => present,
     owner   => 'root',

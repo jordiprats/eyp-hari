@@ -1,4 +1,7 @@
-define hari::concatfile ($file=$name, $mode='0400') {
+define hari::concatfile (
+                          $file = $name,
+                          $mode = '0400',
+                        ) {
   concat { $file:
     ensure => present,
     owner  => 'root',

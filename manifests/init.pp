@@ -1,4 +1,8 @@
-class hari ($file='/.hari', $content="HARi was HERE\n", $mode='0400') {
+class hari(
+            $file    = '/.hari',
+            $content = "HARi was HERE\n",
+            $mode    = '0400',
+          ) {
 
   if($file!=undef)
   {

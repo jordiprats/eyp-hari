@@ -126,6 +126,12 @@ hari::concatfile_fragment { 'extra hari 4':
 
 #### hari::concatfile_fragment
 
+* **file**: file path (default: resource's name)
+* **content**: file contents (default: HARi was HERE)
+* **mode**: file mode (default: 0400)
+* **fragment_name**: fragment name (default: 00)
+* **order**: fragment order (default: 00)
+
 ## Limitations
 
 Tested on:
