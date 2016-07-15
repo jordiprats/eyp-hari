@@ -24,7 +24,7 @@ Hello World puppet module *on asteroids*
 ## Module Description
 
 module to be able to create files on a system using a given content or using
-a concat file
+a concat resource
 
 ## Setup
 
@@ -34,7 +34,22 @@ a concat file
 
 ### Beginning with hari
 
-create a file
+basic usage:
+
+```puppet
+class { 'hari': }
+```
+
+This creates a file **/.hari** (**0400** mode) with the following contents:
+
+```
+HARi was HERE
+```
+
+## Usage
+
+### create a file
+
 ```puppet
 class { 'hari':
   file    => '/hello.world.txt',
@@ -42,7 +57,7 @@ class { 'hari':
 }
 ```
 
-create additional files:
+### create additional files
 
 ```puppet
 hari::file { '/.hari.file1':
@@ -54,7 +69,7 @@ hari::file { '/.hari.file2':
 }
 ```
 
-create additional files using concat:
+### create additional files using concat
 
 ```puppet
 hari::concatfile { 'hari3':
@@ -86,13 +101,27 @@ hari::concatfile_fragment { 'extra hari 4':
 }
 ```
 
-## Usage
-
-TODO
-
 ## Reference
 
-TODO
+### classes
+
+#### hari
+
+* **file**: file path, if set to undef, does not create any file (default: /.hari)
+* **content**: file contents (default: HARi was HERE)
+* **mode**: file mode (default: 0400)
+
+### defines
+
+#### hari::file
+
+* **file**: file path (default: /.hari)
+* **content**: file content (default: HARi was HERE)
+* **mode**: file mode (default: 0400)
+
+#### hari::concatfile
+
+#### hari::concatfile_fragment
 
 ## Limitations
 
