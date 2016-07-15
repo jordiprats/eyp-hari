@@ -1,6 +1,6 @@
 # hari
 
-[![PRs Welcome](https://img.shields.io/badge/prs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/prs-welcome-brightgreen.svg)]
 
 **jordiprats/eyp-hari**: [![Build Status](https://travis-ci.org/jordiprats/eyp-hari.png?branch=master)](https://travis-ci.org/jordiprats/eyp-hari)
 
