@@ -107,7 +107,7 @@ hari::concatfile_fragment { 'extra hari 4':
 
 #### hari
 
-* **file**: file path, if set to undef, does not create any file (default: /.hari)
+* **file**: file (string) or files path(array), if set to undef, does not create any file (default: /.hari)
 * **content**: file contents (default: HARi was HERE)
 * **mode**: file mode (default: 0400)
 
