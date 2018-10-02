@@ -5,11 +5,11 @@
   "summary": "HARi was HERE",
   "license": "Apache-2.0",
   "source": "https://github.com/jordiprats/eyp-hari",
-  "project_page": "http://systemadmin.es",
-  "issues_url": null,
+  "project_page": "https://github.com/jordiprats/eyp-hari",
+  "issues_url": "https://github.com/jordiprats/eyp-hari/issues",
   "dependencies": [
-    {"version_requirement":">= 1.0.0","name":"puppetlabs/stdlib"},
-    {"version_requirement":">= 1.2.3","name":"puppetlabs/concat"}
+    {"version_requirement":">= 1.0.0 < 9.9.9","name":"puppetlabs/stdlib"},
+    {"version_requirement":">= 1.2.3 < 9.9.9","name":"puppetlabs/concat"}
   ],
   "operatingsystem_support": [
     {
@@ -48,12 +48,8 @@
   ],
   "requirements": [
     {
-      "name": "pe",
-      "version_requirement": ">= 3.0.0"
-    },
-    {
       "name": "puppet",
-      "version_requirement": ">= 3.0.0"
+      "version_requirement": ">= 3.8.0"
     }
   ]
 }
